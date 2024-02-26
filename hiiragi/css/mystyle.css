@@ -1,4 +1,53 @@
 ﻿body{
 	background-color:#ffffff;
 	color:#333333;
+	font-family: "メイリオ","Hiragino Kaku Gothic Pro",sans-serif;
+	/* font-family: Windows用フォント,Mac用フォント,大まかなフォントの種類; */
+	margin: 0;
+	padding: 0;
+}
+
+header{
+	background-color: #003366;
+	color: #ffffff;
+}
+
+p{
+	font-size: 90%;
+	/* 親要素のサイズに対する割合 */
+}
+h1{
+	font-size: 180%;
+}
+h2{
+	font-size: 120%;
+	border-bottom: 1px dashed #003366;
+	border-left: 10px solid #333333;
+	padding-left: 7px;
+}
+footer{
+	border-top: 5px solid #003366;
+	text-align: center;
+}
+
+article{
+	position: relative;
+}
+.catch{
+	position: absolute;
+	top: 20px;
+	left: 30px;
+	color: #ffffff;
+	text-shadow: 5px 5px 10px #333333;
+}
+
+.maingazo{
+	background-color: #0099ff;
+}
+
+ul{
+	/* ↓・を消す */
+	list-style-type: none;
+	/* ↓ulは左のみ40pxのpaddingがあることがディベロッパーツールでわかった */
+	padding: 0%;
 }
