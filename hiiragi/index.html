@@ -8,13 +8,15 @@
 <body>
 <header>
     <img src="image/logo.png" width="300" height="56" alt="ひいらぎ不動産">
-    <ul>
-        <li>トップ</li>
-        <li>物件選びのポイント</li>
-        <li>おすすめ物件</li>
-        <li>会社案内</li>
-        <li>お問合せ</li>
-    </ul>
+    <nav>
+        <ul>
+            <li>トップ</li>
+            <li>物件選びのポイント</li>
+            <li>おすすめ物件</li>
+            <li>会社案内</li>
+            <li>お問合せ</li>
+        </ul>
+    </nav>
 </header>
 <article>
     <img class="maingazo" src="image/fuukei.jpg" width="960" height="430" alt="風景">
@@ -25,9 +27,10 @@
     <section>
         <h2>お知らせ</h2>
         <ul>
-            <li>08/20年内にご契約いただいた方は、仲介手数料半額キャンペーン実施中。</li>
-            <li>08/10新築マンション「アイビーハイム青島」の募集を開始しました。</li>
-            <li>08/01今月のおすすめ物件を更新しました。</li>
+            <!-- ↓文字データとしてではなく、日付データとして認識 Accessibilityがnameに変わる -->
+            <li> <time datetime="2015-08-20">08/20</time> 年内にご契約いただいた方は、仲介手数料半額キャンペーン実施中。</li>
+            <li><time datetime="2015-08-10">08/10</time>新築マンション「アイビーハイム青島」の募集を開始しました。</li>
+            <li><time datetime="2015-08-01">08/01</time>今月のおすすめ物件を更新しました。</li>
         </ul>
     </section>
 </article>
