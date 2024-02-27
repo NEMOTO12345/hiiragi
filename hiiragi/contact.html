@@ -40,6 +40,28 @@
 <section>
 <h2>フォームによるお問い合わせ</h2>
 <p>以下のフォームにご記入の上、送信してください。</p>
+
+<form>
+ <p><label for="">名前（必須） :
+    <input type="text" name="username" placeholder="全角で入力" required>
+ </label></p>
+
+ <p><label for="">カタカナ（任意） :
+    <input type="text" name="username" placeholder="全角カタカナで入力" required>
+ </label></p>
+
+ <p><label for="">電話番号 :
+    <input type="tel" name="usertel" placeholder="ハイフンなしの半角数字で入力してください"required>
+ </label></p>
+ <p><label for="">メールアドレス（必須） ;
+    <input type="email" name="usermail" placeholder="半角で入力してください"required>
+ </label></p>
+ <p><label for="">お問合せ内容 :
+    <textarea name="username" placeholder="できるだけ具体的な内容を入力してください"></textarea>
+ </label></p>
+ <p><button type="submit">送信</button></p>
+</form>
+
 </section>
 </article>
 <footer>
