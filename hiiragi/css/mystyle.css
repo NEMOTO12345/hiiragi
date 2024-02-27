@@ -94,3 +94,46 @@ nav ul{
 	padding-bottom: 5px;
 	margin: 0;
 }
+
+.header-in{
+	width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/* ⇩ウィンドウの幅の調整 */
+@media (max-width:959px) {
+	header img{
+		float: none;
+	}
+
+	nav ul{
+		text-align: left;
+		padding: 0;
+	}
+
+	article{
+		width: auto;
+	}
+
+	article img{
+		max-width: 100%;
+		height: auto;
+	}
+	.header-in{
+		width: auto;
+	}
+}
+
+@media (max-width:600px) {
+	nav li{
+		font-size: 75%;
+		padding-left: 2px;
+		padding-right: 2px;
+	}
+
+	.catch{
+		top: 5px;
+		left: 5px;
+	}
+}
