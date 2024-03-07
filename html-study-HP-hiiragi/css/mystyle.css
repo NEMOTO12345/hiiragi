@@ -1,0 +1,358 @@
+﻿body{
+	background-color:#ffffff;
+	color:#333333;
+	font-family: "メイリオ","Hiragino Kaku Gothic Pro",sans-serif;
+	/* font-family: Windows用フォント,Mac用フォント,大まかなフォントの種類; */
+	margin: 0;
+	padding: 0;
+}
+
+header{
+	background-color: #003366;
+	color: #ffffff;
+}
+
+p{
+	font-size: 90%;
+	/* ↑親要素のサイズに対する割合 */
+	line-height: 1.8;
+}
+h1{
+	font-size: 180%;
+	margin: 0;
+}
+h2{
+	font-size: 120%;
+	border-bottom: 1px dashed #003366;
+	border-left: 10px solid #333333;
+	padding-left: 7px;
+}
+footer{
+	border-top: 5px solid #003366;
+	text-align: center;
+}
+
+article{
+	position: relative;
+}
+.catch{
+	position: absolute;
+	top: 20px;
+	left: 30px;
+	color: #ffffff;
+	text-shadow: 5px 5px 10px #333333;
+}
+
+.maingazo{
+	background-color: #0099ff;
+}
+
+ul{
+	/* ↓・を消す */
+	list-style-type: none;
+	/* ↓ulは左のみ40pxのpaddingがあることがディベロッパーツールでわかった */
+	padding: 0%;
+}
+
+time{
+	border-radius: 10px;
+	background-color: #999;
+	color: #fff;
+}
+
+ul time{
+	font-size: 90%;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-right: 5px;
+}
+
+nav li{
+	/* ↓100〜900の数値のうち700と同じ太さ */
+	font-weight: bold;
+	display: inline;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-right: 1px solid #fff;
+}
+
+header img{
+	float: left;
+
+}
+
+article{
+	/* ↓？？？ */
+	clear: both;
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+nav ul{
+	text-align: right;
+	padding-top: 26px;
+	padding-bottom: 5px;
+	margin: 0;
+}
+
+.header-in{
+	width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.sub-h1{
+	background-image: linear-gradient(to left,#fff,#dcdcdc);
+	padding-left: 10px;
+	border-left: 15px solid #003366;
+}
+.point-list{
+	list-style-image: url(../image/list.gif);
+	font-weight: bold;
+	margin-left: 30px;
+}
+
+.point-img{
+	float: right;
+	margin-left: 20px;
+}
+
+.sentou{
+	clear: both;
+	text-align: right;
+}
+
+ol{
+	padding-left: 0%;
+}
+
+ol li{
+	display: inline;
+	margin-right: 5px;
+	font-size: 80%;
+}
+.page{
+	padding-left: 10px;
+	padding-right:10px;
+}
+
+nav a{
+	text-decoration: none;
+	color: #fff;
+
+}
+
+nav a:hover{
+	color: #ffcc00;
+}
+a img{
+	border: 0;
+}
+
+table{
+	border: 1px solid #333;
+	font-size: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	border-collapse: collapse;
+}
+
+th{
+	background-color: #ccccff;
+	border: 1px solid #333;
+	padding: 10px;
+	width: 20%;
+}
+
+td{
+	border: 1px solid #333;
+	padding: 10px;
+}
+
+caption{
+	caption-side: bottom;
+}
+
+aside h1{
+	font-size: 120%;
+	border-bottom: 1px dotted #003366;
+	padding-left: 5px;
+	margin: 0;
+}
+aside li{
+	border-bottom: 1px dotted #666;
+}
+aside ul{
+	margin: 0;
+}
+
+aside a{
+	display: block;
+	color: #333;
+	text-decoration: none;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 5px;
+}
+
+aside a:hover{
+	background-color: #dcdcdc;
+}
+
+.bukkenmei{
+	display: block;
+	font-size: 80%;
+	color: #666;
+}
+
+h3{
+	padding-left: 10px;
+	border-left: 20px solid #00cccc;
+	font-size: 105%;
+}
+.select{
+	background-color: #ffcc00;
+}
+
+.bukken-kiji{
+	float: left;
+	width: 75%;
+}
+
+aside{
+	float: right;
+}
+
+footer{
+	clear: both;
+}
+
+iframe{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+input{
+	display: block;
+	width: 400px;
+}
+
+textarea{
+	display: block;
+	width: 600px;
+	height: 120px;
+}
+
+button{
+	width: 180px;
+	padding: 10px;
+}
+
+.fa-solid.fa-bars,.fa-solid.fa-x{
+    position: fixed;
+	right: 0;
+	top: 10px;
+	font-size: 160%;
+	color: #fff;
+	display: none;
+
+}
+/* ⇩ウィンドウの幅の調整 */
+@media (max-width:959px) {
+	header img{
+		float: none;
+	}
+
+	nav ul{
+		text-align: left;
+		padding: 0;
+	}
+
+	/* humbergerメニュー start*/
+	nav ul{
+		position: fixed;
+		text-align: center;
+		top: 0;
+		height: 100vh;
+		width: 100%;
+		background-color: #00336640;
+		z-index: 100;
+		border-collapse:collapse ;
+	}
+
+	nav li{
+		padding: 40px 0;
+		display: block;
+		font-size: 220%;
+		border: 1px dotted #000;
+
+	}
+
+	nav li:hover{
+		background-color: #0099ff;
+		padding: 30px 0;
+	}
+
+	/* humbergerメニュー end */
+
+	article{
+		width: auto;
+	}
+
+	article img{
+		max-width: 100%;
+		height: auto;
+	}
+	.header-in{
+		width: auto;
+	}
+	.bukken-kiji{
+		float: none;
+		width: 100%;
+	}
+	aside{
+		float: none;
+	}
+}
+
+@media (max-width:600px) {
+	nav li{
+		font-size: 75%;
+		padding-left: 2px;
+		padding-right: 2px;
+	}
+
+	.catch{
+		top: 5px;
+		left: 5px;
+	}
+
+	.point-img{
+		float: none;
+	}
+	video{
+		max-width: 100%;
+		height: auto;
+	}
+
+	iframe{
+		max-width: 100%;
+	}
+
+	input textarea{
+		width: 320px;
+	}
+
+
+}
+
+@media print {
+	.catch{
+		color: #000;
+		text-shadow: none;
+	}
+
+}
+
