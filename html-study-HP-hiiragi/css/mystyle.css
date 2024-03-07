@@ -270,6 +270,9 @@ body.open .fa-solid.fa-house{
 body.open .fa-solid.fa-x{
     display: block;
     z-index: 101;
+	color: rgb(166, 105, 0);
+	font-size: 50px;
+	text-align: center;
 }
 /* ⇩ウィンドウの幅の調整 */
 @media (max-width:959px) {
