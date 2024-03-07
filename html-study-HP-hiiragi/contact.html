@@ -7,8 +7,23 @@
 <meta name="keywords" content="お問い合わせ,フォーム,電話番号">
 <meta name="description" content="ひいらぎ不動産のお問い合わせ先です。">
 <meta name="viewport" content="width=device-width">
+<script src="https://kit.fontawesome.com/21465231b5.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<script type="text/javascript">
+    $(function () {
+    
+    $('.fa-house,.fa-x,.menu').on('click', function () {
+    
+    $('body').toggleClass('open');
+    
+    });
+    
+    });   
+</script>    
 </head>
 <body>
+   <i class="fa-solid fa-house"><br>メニュー</i>
+    <i class="fa-solid fa-x"></i>
 <header>
 <div class="header-in">
 <a href="index.html" id="pagetop"><img src="image/logo.png" width="300" height="56" alt="Hiiragi Real Estate"></a>
